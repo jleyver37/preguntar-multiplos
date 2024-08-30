@@ -1,6 +1,7 @@
 let Numero = 0
 let Contador = 0
 input.onButtonPressed(Button.A, function () {
+    Numero = 0
     Numero += randint(2, 8)
     basic.showNumber(Numero)
     basic.clearScreen()
@@ -54,6 +55,7 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onButtonPressed(Button.AB, function () {
+    Numero = 0
     Numero += randint(2, 8)
     basic.showNumber(Numero)
     basic.clearScreen()
@@ -67,6 +69,7 @@ input.onButtonPressed(Button.AB, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
+    Numero = 0
     Numero += randint(2, 8)
     basic.showNumber(Numero)
     basic.clearScreen()
