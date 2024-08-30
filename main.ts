@@ -1,6 +1,7 @@
-let Numero = 0
 let Contador = 0
+let Numero = 0
 input.onButtonPressed(Button.A, function () {
+    Contador = 0
     Numero = 0
     Numero += randint(2, 8)
     basic.showNumber(Numero)
@@ -48,7 +49,6 @@ input.onButtonPressed(Button.A, function () {
             `)
         basic.clearScreen()
         basic.pause(1000)
-        Contador = 0
         Contador += 1
         basic.showNumber(Numero * Contador)
         basic.pause(1000)
@@ -56,6 +56,7 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onButtonPressed(Button.AB, function () {
+    Contador = 0
     Numero = 0
     Numero += randint(2, 8)
     basic.showNumber(Numero)
@@ -63,7 +64,6 @@ input.onButtonPressed(Button.AB, function () {
     for (let index = 0; index < randint(2, 8); index++) {
         music.play(music.builtinPlayableSoundEffect(soundExpression.giggle), music.PlaybackMode.UntilDone)
         basic.pause(1000)
-        Contador = 0
         Contador += 1
         basic.showNumber(Numero * Contador)
         basic.pause(1000)
