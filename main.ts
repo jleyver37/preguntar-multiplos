@@ -4,7 +4,7 @@ input.onButtonPressed(Button.A, function () {
     Numero += randint(2, 8)
     basic.showNumber(Numero)
     basic.clearScreen()
-    for (let index = 0; index < 10; index++) {
+    for (let index = 0; index < randint(2, 8); index++) {
         music.play(music.builtinPlayableSoundEffect(soundExpression.giggle), music.PlaybackMode.UntilDone)
         basic.showLeds(`
             . . . . .
@@ -57,7 +57,7 @@ input.onButtonPressed(Button.AB, function () {
     Numero += randint(2, 8)
     basic.showNumber(Numero)
     basic.clearScreen()
-    for (let index = 0; index < 10; index++) {
+    for (let index = 0; index < randint(2, 8); index++) {
         music.play(music.builtinPlayableSoundEffect(soundExpression.giggle), music.PlaybackMode.UntilDone)
         basic.pause(1000)
         Contador += 1
@@ -70,7 +70,7 @@ input.onButtonPressed(Button.B, function () {
     Numero += randint(2, 8)
     basic.showNumber(Numero)
     basic.clearScreen()
-    for (let index = 0; index < 10; index++) {
+    for (let index = 0; index < randint(2, 8); index++) {
         music.play(music.builtinPlayableSoundEffect(soundExpression.giggle), music.PlaybackMode.UntilDone)
         basic.showLeds(`
             . . . . .
